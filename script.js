@@ -7,11 +7,10 @@ window.addEventListener("load", function(){
             json.sort(function(a,b){
                 return b.hoursInSpace - a.hoursInSpace
             });
-            // if (json.active == true ){
-            //     document.getElementById("active").style.color= "green";
-            // }
+            
+            div.innerHTML += `<h4>Astronaut Cout: ${json.length}</h4>`
             for (let i= 0; i < json.length;i++){
-                
+
                 div.innerHTML += 
                 `
                     <div class = "astronaut">
